@@ -16,19 +16,22 @@
         </Canvas.Background>
         <ListBox
             x:Name="LB_Display"
-            Height="348"
-            Width="348"
+            Height="366"
+            Width="486"
             d:ItemsSource="{d:SampleData ItemCount=5}"
-            Canvas.Left="40"
-            Canvas.Top="35"
+            Canvas.Left="20"
+            Canvas.Top="22"
             Background="#FFE08888"
-            FontFamily="Cascadia Code SemiLight" />
+            FontFamily="Cascadia Code SemiLight"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="11" />
         <GroupBox
             Height="210"
             Header="Buttons&#xD;&#xA;"
             Width="190"
-            Canvas.Left="472"
-            Canvas.Top="43"
+            Canvas.Left="534"
+            Canvas.Top="31"
             BorderBrush="#FF81D0FF"
             FontFamily="Arial Black"
             Foreground="White" />
@@ -36,58 +39,64 @@
             Height="110"
             Header="Order&#xD;&#xA;"
             Width="190"
-            Canvas.Left="472"
-            Canvas.Top="273"
+            Canvas.Left="534"
+            Canvas.Top="261"
             HorizontalAlignment="Left"
-            VerticalAlignment="Center"
+            VerticalAlignment="Top"
             BorderBrush="#FF69BCED"
             FontFamily="Segoe UI Black"
             Foreground="White" />
         <RadioButton
             x:Name="RB_ASD"
             Content="Ascending"
-            Canvas.Left="498"
-            Canvas.Top="306"
+            Canvas.Left="560"
+            Canvas.Top="294"
             Foreground="#FFFFEDED"
             FontSize="16"
             FontFamily="Segoe UI Black" />
         <RadioButton
             x:Name="RB_DSC"
             Content="Descending"
-            Canvas.Left="498"
-            Canvas.Top="336"
+            Canvas.Left="560"
+            Canvas.Top="324"
             Foreground="White"
             Height="29"
             Width="138"
             FontSize="16"
             FontFamily="Arial Black" />
         <Button
-            Content="Type Of Magical Creature"
-            Canvas.Left="494"
-            Canvas.Top="89"
+            x:Name="B_Creature"
+            Content="Sort Magical Creature"
+            Canvas.Left="556"
+            Canvas.Top="77"
             Height="30"
             Width="146"
             HorizontalAlignment="Left"
-            VerticalAlignment="Center"
-            Background="#FFBF9B9B" />
+            VerticalAlignment="Top"
+            Background="#FFBF9B9B"
+            Click="B_Creature_Click" />
         <Button
-            Content="Magical Potency"
-            Canvas.Left="494"
-            Canvas.Top="202"
+            x:Name="B_Potency"
+            Content="Sort Magical Potency"
+            Canvas.Left="556"
+            Canvas.Top="190"
             Height="30"
             Width="146"
             HorizontalAlignment="Left"
-            VerticalAlignment="Center"
-            Background="#FFBF9B9B" />
+            VerticalAlignment="Top"
+            Background="#FFBF9B9B"
+            Click="B_Potency_Click" />
         <Button
-            Content="Type Of Element"
-            Canvas.Left="494"
-            Canvas.Top="142"
+            x:Name="B_Element"
+            Content="Sort Type of Element"
+            Canvas.Left="556"
+            Canvas.Top="130"
             Height="30"
             Width="146"
             HorizontalAlignment="Left"
-            VerticalAlignment="Center"
-            Background="#FFBF9B9B" />
+            VerticalAlignment="Top"
+            Background="#FFBF9B9B" 
+            Click="B_Element_Click" />
 
     </Canvas>
 </Window>
