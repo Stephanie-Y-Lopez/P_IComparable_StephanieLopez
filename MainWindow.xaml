@@ -1,0 +1,93 @@
+﻿<Window
+    x:Class="P_IComparable_StephanieLopez.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:P_IComparable_StephanieLopez"
+    mc:Ignorable="d"
+    Title="MainWindow"
+    Height="450"
+    Width="800">
+    <Canvas>
+        <Canvas.Background>
+            <ImageBrush
+                ImageSource="/Backdrop.jpg" />
+        </Canvas.Background>
+        <ListBox
+            x:Name="LB_Display"
+            Height="348"
+            Width="348"
+            d:ItemsSource="{d:SampleData ItemCount=5}"
+            Canvas.Left="40"
+            Canvas.Top="35"
+            Background="#FFE08888"
+            FontFamily="Cascadia Code SemiLight" />
+        <GroupBox
+            Height="210"
+            Header="Buttons&#xD;&#xA;"
+            Width="190"
+            Canvas.Left="472"
+            Canvas.Top="43"
+            BorderBrush="#FF81D0FF"
+            FontFamily="Arial Black"
+            Foreground="White" />
+        <GroupBox
+            Height="110"
+            Header="Order&#xD;&#xA;"
+            Width="190"
+            Canvas.Left="472"
+            Canvas.Top="273"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            BorderBrush="#FF69BCED"
+            FontFamily="Segoe UI Black"
+            Foreground="White" />
+        <RadioButton
+            x:Name="RB_ASD"
+            Content="Ascending"
+            Canvas.Left="498"
+            Canvas.Top="306"
+            Foreground="#FFFFEDED"
+            FontSize="16"
+            FontFamily="Segoe UI Black" />
+        <RadioButton
+            x:Name="RB_DSC"
+            Content="Descending"
+            Canvas.Left="498"
+            Canvas.Top="336"
+            Foreground="White"
+            Height="29"
+            Width="138"
+            FontSize="16"
+            FontFamily="Arial Black" />
+        <Button
+            Content="Type Of Magical Creature"
+            Canvas.Left="494"
+            Canvas.Top="89"
+            Height="30"
+            Width="146"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Background="#FFBF9B9B" />
+        <Button
+            Content="Magical Potency"
+            Canvas.Left="494"
+            Canvas.Top="202"
+            Height="30"
+            Width="146"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Background="#FFBF9B9B" />
+        <Button
+            Content="Type Of Element"
+            Canvas.Left="494"
+            Canvas.Top="142"
+            Height="30"
+            Width="146"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Background="#FFBF9B9B" />
+
+    </Canvas>
+</Window>
