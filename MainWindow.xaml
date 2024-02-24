@@ -27,33 +27,26 @@
             VerticalAlignment="Center"
             FontSize="11" />
         <GroupBox
-            Height="210"
-            Header="Buttons&#xD;&#xA;"
+            Height="281"
+            Header="Order Optional&#xD;&#xA;"
             Width="190"
             Canvas.Left="534"
-            Canvas.Top="31"
+            Canvas.Top="107"
             BorderBrush="#FF81D0FF"
             FontFamily="Arial Black"
-            Foreground="White" />
-        <GroupBox
-            Height="110"
-            Header="Order&#xD;&#xA;"
-            Width="190"
-            Canvas.Left="534"
-            Canvas.Top="261"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            BorderBrush="#FF69BCED"
-            FontFamily="Segoe UI Black"
-            Foreground="White" />
+            Foreground="White"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top" />
         <RadioButton
             x:Name="RB_ASD"
             Content="Ascending"
             Canvas.Left="560"
-            Canvas.Top="294"
+            Canvas.Top="276"
             Foreground="#FFFFEDED"
-            FontSize="16"
-            FontFamily="Segoe UI Black" />
+            FontSize="20"
+            FontFamily="Franklin Gothic Medium"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top" />
         <RadioButton
             x:Name="RB_DSC"
             Content="Descending"
@@ -62,41 +55,46 @@
             Foreground="White"
             Height="29"
             Width="138"
-            FontSize="16"
-            FontFamily="Arial Black" />
+            FontSize="20"
+            FontFamily="Franklin Gothic Medium" />
         <Button
             x:Name="B_Creature"
             Content="Sort Magical Creature"
             Canvas.Left="556"
-            Canvas.Top="77"
-            Height="30"
+            Canvas.Top="47"
+            Height="41"
             Width="146"
-            HorizontalAlignment="Left"
+            HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Background="#FFBF9B9B"
-            Click="B_Creature_Click" />
+            Click="B_Creature_Click"
+            RenderTransformOrigin="0.521,-0.59"
+            FontFamily="Franklin Gothic Medium" />
         <Button
             x:Name="B_Potency"
             Content="Sort Magical Potency"
             Canvas.Left="556"
-            Canvas.Top="190"
+            Canvas.Top="217"
             Height="30"
             Width="146"
-            HorizontalAlignment="Left"
+            HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Background="#FFBF9B9B"
-            Click="B_Potency_Click" />
+            Click="B_Potency_Click"
+            FontFamily="Franklin Gothic Medium" />
         <Button
             x:Name="B_Element"
             Content="Sort Type of Element"
             Canvas.Left="556"
-            Canvas.Top="130"
+            Canvas.Top="148"
             Height="30"
             Width="146"
-            HorizontalAlignment="Left"
+            HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            Background="#FFBF9B9B" 
-            Click="B_Element_Click" />
+            Background="#FFBF9B9B"
+            Click="B_Element_Click"
+            FontFamily="Franklin Gothic Medium"
+            RenderTransformOrigin="0.501,1.079" />
 
     </Canvas>
 </Window>
